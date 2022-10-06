@@ -5,6 +5,7 @@ export const Box = styled.div`
   width: 90%;
   height: 100vh;
   margin: 0 auto;
+  padding-bottom: 1em;
 `
 export const Card = styled.div`
   width: 60%;
