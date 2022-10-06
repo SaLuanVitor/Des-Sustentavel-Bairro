@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom"
-import * as S from "./StyleCardsIcon.js"
+import * as S from "./StyleCardsBox.js"
 
-export default function CardsIcon() {
-  const Icons =
+export function CardsBox() {
+  const Cards =
     [
       {
         id: 1,
         img: 'Imagem',
         alt: 'Descrição',
-        color: '#f45572',
+        title: 'Titulo',
         text: 'Texto Resumo',
         link: "/Pag01"
       },
@@ -17,7 +16,7 @@ export default function CardsIcon() {
         id: 2,
         img: 'Imagem',
         alt: 'Descrição',
-        color: '#acf7c3',
+        title: 'Titulo',
         text: 'Texto Resumo',
         link: "/Pag02"
       },
@@ -25,7 +24,7 @@ export default function CardsIcon() {
         id: 3,
         img: 'Imagem',
         alt: 'Descrição',
-        color: '#FFEB99',
+        title: 'Titulo',
         text: 'Texto Resumo',
         link: "/Pag03"
       },
@@ -33,7 +32,7 @@ export default function CardsIcon() {
         id: 4,
         img: 'Imagem',
         alt: 'Descrição',
-        color: '#ff6961',
+        title: 'Titulo',
         text: 'Texto Resumo',
         link: "/Pag04"
       },
@@ -41,24 +40,23 @@ export default function CardsIcon() {
         id: 5,
         img: 'Imagem',
         alt: 'Descrição',
-        color: '#84b6f4',
+        title: 'Titulo',
         text: 'Texto Resumo',
         link: "/Pag05"
       },
     ]
   return (
     <>
-      <S.Box>
-        {Icons.map((i) => (
-          <Link to={i.link}>
-            <S.CardsIcon color={i.color} key={i.id}>
-              <p>{i.id}</p>
-              <h2>{i.text}</h2>
-              <img src={i.img} alt={i.alt} />
-            </S.CardsIcon>
-          </Link>
+      <S.CardBox>
+        {Cards.slice().map((i) => (
+          <S.CardsBox key={i.id}>
+            <p>{i.id}</p>
+            <img src={i.img} alt={i.alt} />
+            <h2>{i.title}</h2>
+            <p>{i.text}</p>
+          </S.CardsBox>
         ))}
-      </S.Box>
+      </S.CardBox>
     </>
   )
 }

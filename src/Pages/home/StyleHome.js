@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  border: solid black;
   width: 90%;
   height: 100vh;
-  margin: 2em auto;
+  margin: 0 auto;
+  background-color: #c8c3f8;
+  h1{
+    text-align: center;
+    padding-top: 2em;
+  }
 `

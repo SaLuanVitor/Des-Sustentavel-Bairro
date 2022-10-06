@@ -1,4 +1,5 @@
 import React from "react";
+import { CardsBox } from "../components/cardsBox/CardsBox";
 import Nav from "../components/nav/Nav";
 import * as S from "./StylePag03"
 
@@ -8,7 +9,9 @@ export default function Pag03() {
     <>
       <Nav />
       <S.Box>
-        <h2>Página 03</h2>
+        <S.Card>
+          <CardsBox />
+        </S.Card>
       </S.Box>
     </>
   )

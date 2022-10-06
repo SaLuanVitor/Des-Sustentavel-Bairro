@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  border: solid black;
+  background-color: #c8c3f8;
   width: 90%;
   height: 100vh;
-  margin: 2em auto;
+  margin: 0 auto;
+`
+export const Card = styled.div`
+  width: 60%;
+  border: solid black;
+  margin: 0 auto;
+  height: 100%;
 `
