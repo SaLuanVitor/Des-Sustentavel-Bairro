@@ -7,9 +7,21 @@ export const Box = styled.div`
   margin: 0 auto;
   padding-bottom: 1em;
 `
-export const Card = styled.div`
+export const CardBox = styled.div`
+  display: flex;
   width: 60%;
-  border: solid black;
-  margin: 0 auto;
   height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: white;
+`
+
+export const CardsHeader = styled.div`
+  background-color: ${props => props.color};
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 100%;
+  border: solid black;
 `
