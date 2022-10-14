@@ -7,13 +7,13 @@ export const Figure = styled.figure`
   @media only screen and (max-width: 472px){
     display: flex;
     top: 0em;
-    right: 5%;
-    left: 5%;
+    right: 2.5%;
+    left: 2.5%;
     position: fixed;
     background-color: #c8c3f8;
     border: solid black;
     padding: 1em;
-    width: 90%;
+    width: 95%;
     justify-content: space-between;
     button{
       width: 50px;
@@ -32,35 +32,35 @@ export const Figure = styled.figure`
 export const CardsIcon = styled.div`
   background-color: ${props => props.color};
   display: flex;
-  width: 90%;
+  width: 95%;
   margin-left: 1em;
   margin-top: 1em;
-  padding: 0.8em;
+  padding: 0.5em;
   justify-content: space-evenly;
-  p{
-    border: solid red;
-    width: 10%;
-  }
+  height: 4em;
+  align-items: center;
   h2{
     font-size: 1rem;
-    border: solid blue;
+    width: 50%;
+    color: black;
   }
   img{
-    border: solid yellow;
+    width: 2em;
+    height: 2em;
+    margin: 1em 0;
   }
 `
 export const Box = styled.div`
   position: fixed;
   top: 6em;
-  padding: 1em;
+  padding: 0.5em;
   border: solid black;
-  width: 90%;
-  left: 5%;
+  width: 95%;
+  left: 2.5%;
   background-color: #c8c3f8;
 `
 
 
 export const ImgLink = styled(Link)`
-  
-
+  text-decoration: none;
 `

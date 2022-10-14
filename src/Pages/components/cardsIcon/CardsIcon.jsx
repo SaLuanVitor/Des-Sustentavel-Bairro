@@ -1,47 +1,51 @@
 import React from "react";
-import { Link } from "react-router-dom"
 import * as S from "./StyleCardsIcon.js"
+import Trabalhadores from "../../../Assets/Icones/trabalhadores.png"
+import Saude from "../../../Assets/Icones/saude.png"
+import Educacao from "../../../Assets/Icones/educacao.png"
+import Urbanizacao from "../../../Assets/Icones/urbanizacao.png"
+import Paz from "../../../Assets/Icones/paz.png"
 export const Icons =
   [
     {
       id: 1,
-      img: 'Imagem',
-      alt: 'Descrição',
+      img: Trabalhadores,
+      alt: 'Icone Trabalho',
       color: '#f45572',
-      text: 'Texto Resumo',
-      link: "/Pag01"
+      text: 'Trabalho Decente e Crescimento Econômico',
+      link: "/Trabalho"
     },
     {
       id: 2,
-      img: 'Imagem',
-      alt: 'Descrição',
+      img: Saude,
+      alt: 'Icone Saúde e Bem-Estar',
       color: '#acf7c3',
-      text: 'Texto Resumo',
-      link: "/Pag02"
+      text: 'Saúde e Bem-Estar',
+      link: "/Saude"
     },
     {
       id: 3,
-      img: 'Imagem',
-      alt: 'Descrição',
+      img: Educacao,
+      alt: 'Icone Educação',
       color: '#FFEB99',
-      text: 'Texto Resumo',
-      link: "/Pag03"
+      text: 'Educação de Qualidade',
+      link: "/Educacao"
     },
     {
       id: 4,
-      img: 'Imagem',
-      alt: 'Descrição',
+      img: Urbanizacao,
+      alt: 'Icone Urbanização',
       color: '#ff6961',
-      text: 'Texto Resumo',
-      link: "/Pag04"
+      text: 'Cidades e comunidades sustentáveis',
+      link: "/Urbanizacao"
     },
     {
       id: 5,
-      img: 'Imagem',
-      alt: 'Descrição',
+      img: Paz,
+      alt: 'Icone paz',
       color: '#84b6f4',
-      text: 'Texto Resumo',
-      link: "/Pag05"
+      text: 'Paz, Justiça e Instituições Eficazes',
+      link: "/Paz"
     },
   ]
 
@@ -51,13 +55,12 @@ export function CardsIcon() {
     <>
       <S.Box>
         {Icons.map((i) => (
-          <Link to={i.link}>
+          <S.NavLink to={i.link} href="#S.CardBox">
             <S.CardsIcon color={i.color} key={i.id}>
-              <p>{i.id}</p>
               <h2>{i.text}</h2>
               <img src={i.img} alt={i.alt} />
             </S.CardsIcon>
-          </Link>
+          </S.NavLink>
         ))}
       </S.Box>
     </>

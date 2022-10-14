@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Nav />
       <S.Box>
-        <h1>Home</h1>
+        <h1>Cidade de Paulo Afonso - BA</h1>
       </S.Box>
     </>
   )
